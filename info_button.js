@@ -14,13 +14,15 @@ let goodButton = new ourButtons("300", "500", "button", "green");
 let badButton = new ourButtons("700", "800", "box", "red");
 
 goodButton.onclick();
+badButton.onclick();
 
 function testButton(test) {
   if (test.props.type === "button") {
     console.log(`Your button correct`);
   } else {
-    `Incorrect information`;
+    console.log(`Incorrect information`);
   }
 }
 
 testButton(goodButton);
+testButton(badButton);
